@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>PIMDEED พิมดีดไทยแลนนัมเบอร์วัน CHINA นัมเบอร์ ทูว</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="logo">
+<iframe class="logo" id="logo" align="center" src="logo.html" frameBorder="0" width="350" height="350" scrolling="no"></iframe>
+</div>
+<fieldset id="field">
+<div class="wrapper" id="wrapper">
+		<div class="outerWrap">
+			<div class="scoreWrap">
+				<p>Score</p>
+				<span class="score">0</span>
+			</div>
+			<div class="timeWrap">
+				<p>Time left</p>
+				<span class="time">XX</span>
+			</div>
+		</div>
+		<div class="wordsWrap">
+			<p class="words">XXX</p>
+		</div>
+		<div class="modeWarp">
+			<p class="modeselect">GGFH</p>
+		</div>
+	</div>
+<div id="content">
+<div class="content">
+  <div class="characterselect" id="saitarn">
+	<center><input type="image" src="img/thai.jpg" id="saitarnpic" width="120" height="130" class="character" onclick="saitarn()"></center>
+	<span >ภาษาไทย</span>
+  </div>
+  
+  <div class="characterselect" id="max">
+  <center><input type="image" src="img/eng.jpg" width="120" height="130" class="character" onclick="maxcha()"></center>
+   <span>English</span>
+  </div>
+</div>
+
+<p class="aligntext">ภาษาที่เลือก : <b id="chaselect"> </b></p>
+<p  class="labeltext"><b>กรอกชื่อเพื่อเข้าเล่น</b></p>
+<p class="aligntext">
+<input type="text" id="name" class="entername" maxlength="15" disabled /> 
+<p></p><button type="button" onclick="checkname()" id="checkname" class="button2" disabled>ตรวจสอบชื่อ</button>
+</p>
+<p align="center" style="margin-top:30px;">
+<button type="button" id="easy" class="myButton" onclick="easy()">Easy</button>
+<button type="button" id="normal" class="myButton" onclick="normal()">Normal</button>
+<button type="button" id="hard" class="myButton" onclick="hard()">Hard</button>
+<p class="aligntext">MODE : <b id="mode">กรุณาเลือกระดับความยาก</b></p>
+</p>
+<br><button type="button" id="butst" class="button1" onclick="startGame()" disabled>STARTGAME</button>
+</div>
+</fieldset>
+<div class="footer">
+  <p class="footertext" align="center">Hight Score</p>
+  <span class="easytext">Easy</span> <span class="normaltext">Normal</span> <span class="hardtext">Hard</span>
+  <br>
+  <span class="easytext" id="easyt">  </span> <span class="normaltext" id="normalt"></span> <span class="hardtext" id="hardt"> </span>
+  <div><button type="button" onclick="resethightscore()" class="button2">RESET HIGHT SCORE</button></div>
+</div>
+<br>
+</body>
+</html>
+<div id="playaudio">
+
+</div>
+<div id="playeff">
+
+</div>
+ <script type="text/javascript" src='js/main.js'> </script>
